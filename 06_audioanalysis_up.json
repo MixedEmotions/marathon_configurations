@@ -1,0 +1,16 @@
+{
+  "id": "audioemotion",
+  "cpus": 1,
+  "mem": 512.0,
+  "instances": 2,
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "mixedemotions/06_audioanalysis_up",
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 8080, "hostPort": 0, "servicePort": 0, "protocol": "tcp" }
+      ]
+    }
+  }
+}

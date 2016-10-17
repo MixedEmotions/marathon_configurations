@@ -1,0 +1,7 @@
+{
+"cmd": "/opt/sds/mesos-dns/mesos-dns -v=1 -config=/opt/sds/mesos-dns/config.json",
+"cpus": 0.5, 
+"mem": 128,
+"id": "mesos-dns",
+"instances": 1
+}

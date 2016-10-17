@@ -1,0 +1,16 @@
+{
+  "id": "spanish-topics",
+  "cpus": 0.5,
+  "mem": 256.0,
+  "instances": 2,
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "mixedemotions/13_topic_image_pt",
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 2712, "hostPort": 0, "servicePort": 9001, "protocol": "tcp" }
+      ]
+    }
+  }
+}
