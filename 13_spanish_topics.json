@@ -6,7 +6,7 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "mixedemotions/13_topic_image_pt",
+      "image": "mixedemotions/13_topic_extraction_spanish",
       "network": "BRIDGE",
       "portMappings": [
         { "containerPort": 2712, "hostPort": 0, "servicePort": 9001, "protocol": "tcp" }
