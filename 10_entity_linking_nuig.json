@@ -1,0 +1,16 @@
+{
+  "id": "entity-linking",
+  "cpus": 1,
+  "mem": 512.0,
+  "instances": 1,
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "mixedemotions/10_entity_linking_nuig",
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 5000, "hostPort": 0, "servicePort": 9002, "protocol": "tcp" }
+      ]
+    }
+  }
+}
