@@ -11,4 +11,15 @@ Available configurations
 
 * 06_audioanalysis_up.json (https://hub.docker.com/r/mixedemotions/06_audioanalysis_up/)
 * 08_spanish_entity_extraction.json (https://hub.docker.com/r/mixedemotions/08_entity_extraction_pt/)
+* 10_entity_linking_nuig.json (https://hub.docker.com/r//mixedemotions/10_entity_linking_nuig)
 * 13_spanish_topics.json (https://hub.docker.com/r/mixedemotions/13_topic_extraction_spanish/)
+
+## Acknowledgement
+
+This module was developed by [Paradigma Digital](https://en.paradigmadigital.com/) as part of the MixedEmotions project. This development has been partially funded by the European Union through the MixedEmotions Project (project number H2020 655632), as part of the `RIA ICT 15 Big data and Open Data Innovation and take-up` programme.
+
+![MixedEmotions](https://raw.githubusercontent.com/MixedEmotions/MixedEmotions/master/img/me.png) 
+
+![EU](https://raw.githubusercontent.com/MixedEmotions/MixedEmotions/master/img/H2020-Web.png)
+
+ http://ec.europa.eu/research/participants/portal/desktop/en/opportunities/index.html
