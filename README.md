@@ -14,6 +14,17 @@ Available configurations
 * 10_entity_linking_nuig.json (https://hub.docker.com/r//mixedemotions/10_entity_linking_nuig)
 * 13_spanish_topics.json (https://hub.docker.com/r/mixedemotions/13_topic_extraction_spanish/)
 
+## Mesos Troubleshooting
+Some of the MixedEmotions' modules are large, so it is neccessary to increase Mesos execution timeout.
+
+Add these lines to mesos-slave-env.sh.
+
+export MESOS_containerizers=docker,mesos
+export MESOS_execution_registration_timeout=5mins
+Alternatively these params can be passed as arguments during runtime.
+
+More information [here](http://mesos.apache.org/documentation/latest/docker-containerizer/).
+
 ## Acknowledgement
 
 This module was developed by [Paradigma Digital](https://en.paradigmadigital.com/) as part of the MixedEmotions project. This development has been partially funded by the European Union through the MixedEmotions Project (project number H2020 655632), as part of the `RIA ICT 15 Big data and Open Data Innovation and take-up` programme.
