@@ -14,6 +14,14 @@ Available configurations
 * 10_entity_linking_nuig.json (https://hub.docker.com/r//mixedemotions/10_entity_linking_nuig)
 * 13_spanish_topics.json (https://hub.docker.com/r/mixedemotions/13_topic_extraction_spanish/)
 
+## Troubleshooting
+
+Some of the docker images are large and [exceed the default MESOS timeouts when loading](https://github.com/MixedEmotions/MixedEmotions/wiki/Installation-Manual#docker-in-mesos). This can be fixed with the following configuration:
+
+    export MESOS_execution_registration_timeout=5mins
+
+
+
 ## Acknowledgement
 
 This module was developed by [Paradigma Digital](https://en.paradigmadigital.com/) as part of the MixedEmotions project. This development has been partially funded by the European Union through the MixedEmotions Project (project number H2020 655632), as part of the `RIA ICT 15 Big data and Open Data Innovation and take-up` programme.
